@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,19 +16,83 @@
   </head>
   <body>
     <div id="app">
-      Todo
+      <header class="header">
+        <div>
+          <h1 class="fs-500">Todo</h1>
+          <button
+            aria-label="switch app theme"
+            id=""
+            class="btn theme--toggle"
+          ></button>
+        </div>
+      </header>
+      <!-- MAIN -->
+      <main>
+        <!-- TODO ADD FORM -->
+        <form class="todo-list__form">
+          <div class="todo-list__form-control">
+            <button aria-checked="false" type="submit" id="add-todo"></button>
+            <input
+              type="text"
+              name="todo"
+              id="todo-add"
+              class="todo-list__input"
+              placeholder="Create a new todo..."
+              aria-label="enter a new todo"
+            />
+            <span></span>
+          </div>
+        </form>
 
-      <!-- Add dynamic number -->
-      items left All Active Completed Clear Completed Drag and drop to reorder
-      list
+        <!-- TODOS SECTION -->
+        <section class="section section-todos">
+          <ul role="list" class="todo-list">
+            <li draggable="true" class="todo">
+              <button
+                aria-label="change todo type"
+                class="btn todo--toggle"
+              ></button>
+              <p>Jog around the park 3x</p>
+              <button
+                aria-label="delete this todo"
+                class="btn todo--delete"
+              ></button>
+            </li>
+          </ul>
+        </section>
 
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </div>
+        <div class="section todo-list__footer">
+          <p class="todos--left">5 items left</p>
+          <div class="todo-list__options">
+            <button data-option="all" class="todo-list__filter-option">
+              All
+            </button>
+            <button data-option="active" class="todo-list__filter-option">
+              Active
+            </button>
+            <button data-option="completed" class="todo-list__filter-option">
+              Completed
+            </button>
+          </div>
+          <button id="btn--clear">Clear Completed</button>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="section section-footer">
+          <p class="suggestion">Drag and drop to reorder list</p>
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a href="https://github.com/pHoeniX-svg">pHoeniX-svg</a>.
+          </p>
+        </footer>
+      </main>
     </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

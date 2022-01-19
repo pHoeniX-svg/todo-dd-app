@@ -1,0 +1,47 @@
+/* -------------------------------- */
+/* COMPONENTS                       */
+/* -------------------------------- */
+
+@use '../abstracts' as *;
+
+/*********** BUTTONS ************/
+%btn {
+  display: inline-block;
+  border: none;
+  border-radius: var(--b-radius);
+  outline: none;
+  background: transparent;
+  font: inherit;
+  letter-spacing: var(--spacing);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  mix-blend-mode: normal;
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  @extend %btn;
+}
+
+// &-dot {
+//   padding: 1rem;
+//   border-radius: 50%;
+//   background-color: hsl(var(--clr-light) / 0.25);
+
+//   &:hover,
+//   &:focus,
+//   &.hovered {
+//     background-color: hsl(var(--clr-light) / 0.5);
+//   }
+
+//   &.active,
+//   &[aria-selected='true'] {
+//     background-color: hsl(var(--clr-light) / 1);
+//   }

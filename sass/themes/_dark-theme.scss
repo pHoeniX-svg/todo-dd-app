@@ -1,0 +1,32 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    // color: hsl(var(--clr-light));
+    // background-color: hsl(var(--clr-dark));
+  }
+  body.light-theme {
+  }
+}
+
+.primary {
+  color: hsl(220, 98%, 61%);
+}
+.vheck {
+  background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+}
+.dark {
+  color: hsl(235, 21%, 11%);
+  color: hsl(235, 21%, 11%);
+  color: hsl(235, 21%, 11%);
+  color: hsl(235, 21%, 11%);
+  color: hsl(235, 21%, 11%);
+  color: hsl(235, 21%, 11%);
+  color: hsl(237, 14%, 26%);
+}
+
+.light {
+  color: hsl(0, 0%, 98%);
+  color: hsl(236, 33%, 92%);
+  color: hsl(233, 11%, 84%);
+  color: hsl(236, 9%, 61%);
+  color: hsl(235, 19%, 35%);
+}

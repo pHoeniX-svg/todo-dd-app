@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+body {
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-400);
+  line-height: 1.5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+%font-sans {
+  font-family: var(--ff-sans);
+}
+
+.ff-sans {
+  @extend %font-sans;
+}
+
+small,
+.text_small {
+  font-size: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
+}

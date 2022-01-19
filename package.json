@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@netlify/functions": "^0.10.0",
+    "axios": "^0.25.0",
     "dotenv": "^10.0.0",
     "firebase": "^9.6.1",
     "netlify": "^10.1.1"
