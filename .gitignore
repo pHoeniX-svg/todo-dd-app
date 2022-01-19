@@ -24,3 +24,6 @@ dist-ssr
 *-template.md
 *-guide.md
 note-*.md
+
+# Local Netlify folder
+.netlify

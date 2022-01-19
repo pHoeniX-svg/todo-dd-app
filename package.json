@@ -4,7 +4,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start:dev": "netlify dev",
+    "watch:dev": "tsc --noEmit --watch",
+    "start": "run-p start:dev watch:dev"
   },
   "devDependencies": {
     "sass": "^1.45.2",
@@ -12,6 +15,7 @@
     "vite": "^2.7.2"
   },
   "dependencies": {
+    "@netlify/functions": "^0.10.0",
     "dotenv": "^10.0.0",
     "firebase": "^9.6.1",
     "netlify": "^10.1.1"
