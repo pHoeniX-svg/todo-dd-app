@@ -15,81 +15,82 @@
     <title>Todo Drag and Drop</title>
   </head>
   <body>
+    <!-- <a href="#main-content">Skip to main content</a> -->
     <div id="app">
       <header class="header">
-        <div>
-          <h1 class="fs-500">Todo</h1>
+        <div class="container flex a-center sp-btw">
+          <h1 class="fs-700 ls-7 text-upper">Todo</h1>
           <button
             aria-label="switch app theme"
             id=""
-            class="btn theme--toggle"
+            class="btn btn--switch"
           ></button>
         </div>
       </header>
       <!-- MAIN -->
-      <main>
+      <main id="main-content">
         <!-- TODO ADD FORM -->
-        <form class="todo-list__form">
-          <div class="todo-list__form-control">
-            <button aria-checked="false" type="submit" id="add-todo"></button>
-            <input
-              type="text"
-              name="todo"
-              id="todo-add"
-              class="todo-list__input"
-              placeholder="Create a new todo..."
-              aria-label="enter a new todo"
-            />
-            <span></span>
-          </div>
-        </form>
+        <div class="container">
+          <form class="form">
+            <div class="form-control">
+              <button aria-checked="false" type="submit" id="add-todo"></button>
+              <input
+                type="text"
+                name="todo"
+                id="todo-add"
+                class="form-input"
+                placeholder="Create a new todo..."
+                aria-label="enter a new todo"
+              />
+              <span></span>
+            </div>
+          </form>
 
-        <!-- TODOS SECTION -->
-        <section class="section section-todos">
-          <ul role="list" class="todo-list">
-            <li draggable="true" class="todo">
-              <button
-                aria-label="change todo type"
-                class="btn todo--toggle"
-              ></button>
-              <p>Jog around the park 3x</p>
-              <button
-                aria-label="delete this todo"
-                class="btn todo--delete"
-              ></button>
-            </li>
-          </ul>
-        </section>
-
-        <div class="section todo-list__footer">
-          <p class="todos--left">5 items left</p>
-          <div class="todo-list__options">
-            <button data-option="all" class="todo-list__filter-option">
-              All
-            </button>
-            <button data-option="active" class="todo-list__filter-option">
-              Active
-            </button>
-            <button data-option="completed" class="todo-list__filter-option">
-              Completed
-            </button>
+          <!-- TODOS SECTION -->
+          <section class="section section-todos">
+            <ul role="list" class="todo-list">
+              <li draggable="true" class="todo">
+                <button
+                  aria-label="change todo type"
+                  class="btn todo--toggle"
+                ></button>
+                <p>Jog around the park 3x</p>
+                <button
+                  aria-label="delete this todo"
+                  class="btn todo--delete"
+                ></button>
+              </li>
+            </ul>
+          </section>
+          <div class="section todo-list__footer">
+            <p class="todos--left">5 items left</p>
+            <div class="todo-list__options">
+              <button data-option="all" class="todo-list__filter-option">
+                All
+              </button>
+              <button data-option="active" class="todo-list__filter-option">
+                Active
+              </button>
+              <button data-option="completed" class="todo-list__filter-option">
+                Completed
+              </button>
+            </div>
+            <button id="btn--clear">Clear Completed</button>
           </div>
-          <button id="btn--clear">Clear Completed</button>
+          <!-- FOOTER -->
+          <footer class="section section-footer">
+            <p class="suggestion">Drag and drop to reorder list</p>
+            <p class="attribution">
+              Challenge by
+              <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+              >. Coded by
+              <a href="https://github.com/pHoeniX-svg">pHoeniX-svg</a>.
+            </p>
+          </footer>
         </div>
-
-        <!-- FOOTER -->
-        <footer class="section section-footer">
-          <p class="suggestion">Drag and drop to reorder list</p>
-          <p class="attribution">
-            Challenge by
-            <a
-              href="https://www.frontendmentor.io?ref=challenge"
-              target="_blank"
-              >Frontend Mentor</a
-            >. Coded by
-            <a href="https://github.com/pHoeniX-svg">pHoeniX-svg</a>.
-          </p>
-        </footer>
       </main>
     </div>
 

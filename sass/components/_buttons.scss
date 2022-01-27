@@ -5,7 +5,7 @@
 @use '../abstracts' as *;
 
 /*********** BUTTONS ************/
-%btn {
+.btn {
   display: inline-block;
   border: none;
   border-radius: var(--b-radius);
@@ -24,10 +24,13 @@
   &:focus {
     outline: none;
   }
-}
 
-.btn {
-  @extend %btn;
+  &--switch {
+    width: 4rem;
+    aspect-ratio: 1 /1;
+    background: img('icon-moon.svg');
+    background-repeat: no-repeat;
+  }
 }
 
 // &-dot {

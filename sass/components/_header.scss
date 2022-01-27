@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+.header {
+  min-height: 24rem;
+  padding-block: 5rem;
+  background: img('bg-desktop-light.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
